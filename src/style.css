@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+:root {
+  --color-primary: hwb(202 76% 0%);
+  --color-primary-dark: hwb(215 1% 86%);
+  --color-accent: hwb(213 49% 21%);
+  --color-card: hwb(206 94% 3%);
+  --color-input: hsl(0, 0%, 95%);
+  --color-text: hwb(240 4% 95%);
+  --color-placeholder: hwb(210 33% 30%);
+  --color-border: hwb(240 83% 7%);
+  --color-gradient: linear-gradient(to left top, #e6edf5, #cddbeb, #b4c9e1, #9cb7d8, #84a5ce);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Onest", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text);
+  min-height: 100dvh;
+  background-image: var(--color-gradient);
+  padding: 1rem;
+}
+
+.container {
+  width: 900px;
+  padding: 32px;
+  border-radius: .5rem;
+  background-color: var(--color-card);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-wrapper .logo {
+  width: 56px;
+  height: 56px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  border-radius: .5rem;
+  background-image: radial-gradient(circle, #25927a, #009a96, #00a0b1, #0fa4c8, #4ba7da, #55afe4, #5fb7ee, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  color: hwb(0 100% 0%);
+  font-size: 1.3rem;
+}
+
+.logo-wrapper h1 {
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+.toggle-theme {
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 100%;
+  
+}
