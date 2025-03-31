@@ -54,7 +54,9 @@
           <textarea class="prompt-input" placeholder="Describe your imaguination in details.." required
             autofocus></textarea>
 
-          <button class="prompt-btn" type="button"><i class=" ri-image-add-line"></i></button>
+          <button class="prompt-btn" type="button">
+            <i class="ri-image-circle-ai-line"></i>
+          </button>
 
         </section>
 
@@ -98,6 +100,44 @@
             Generate
           </button>
         </section>
+
+
+        <!-- Result garelly grid -->
+
+        <div class="gallery-grid">
+          <div class="img-card error">
+            <!-- loading -->
+            <div class="status-container">
+              <div class="spiner"></div>
+              <i class="ri-error-warning-line"></i>
+              <p class="status-text">Generating...</p>
+            </div>
+
+            <img src="./public/test.jpg" class="result-img">
+
+            <div class="img-overlay">
+              <button class="img-donwload-btn">
+                <i class="ri-download-2-line"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="img-card">
+
+            <img src="./public/test.jpg" class="result-img">
+
+            <div class="img-overlay">
+              <button class="img-donwload-btn">
+                <i class="ri-download-2-line"></i>
+              </button>
+            </div>
+          </div>
+
+
+
+
+
+        </div>
       </form>
     </main>
   </div>
