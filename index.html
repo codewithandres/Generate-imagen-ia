@@ -46,7 +46,8 @@
         <section class="pormpt-actions">
           <div class="selected-wrapper">
             <i class="ri-arrow-drop-down-line"></i>
-            <select class="custom-select">
+
+            <select class="custom-select" id="model-select">
               <option value="" selected disabled>Select Model</option>
               <option value="black-forest-labs/FLUX.1-dev">Flux.1-dev</option>
               <option value="black-forest-labs/FLUX.1-schnell">Flux.1-schnell</option>
@@ -54,27 +55,32 @@
               <option value="runwayml/stable-diffusion-v1-5">Stable Diffusion v1.5</option>
               <option value="prompthero/openjourney">OpenJourney</option>
             </select>
+
           </div>
 
           <div class="selected-wrapper">
             <i class="ri-arrow-drop-down-line"></i>
-            <select class="custom-select">
+
+            <select class="custom-select" id="count-select">
               <option value="" selected disabled>Iamgen Caunt</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
               <option value="4">4</option>
             </select>
+
           </div>
 
           <div class="selected-wrapper">
             <i class="ri-arrow-drop-down-line"></i>
-            <select class="custom-select">
+
+            <select class="custom-select" id="ratio-select">
               <option value="" selected disabled>Aspect Ratio</option>
               <option value="1/1">Squere (1/1)</option>
               <option value="16/9">Landscape (18/9)</option>
               <option value="9/16">Portrain (9/16)</option>
             </select>
+
           </div>
 
           <button type="submit" class="generate-btn">
@@ -87,8 +93,8 @@
         <!-- Result garelly grid -->
 
         <div class="gallery-grid">
-          <div class="img-card error">
-            <!-- loading -->
+          <!-- <div class="img-card error">
+
             <div class="status-container">
               <div class="spiner"></div>
               <i class="ri-error-warning-line"></i>
@@ -102,22 +108,7 @@
                 <i class="ri-download-2-line"></i>
               </button>
             </div>
-          </div>
-
-          <div class="img-card">
-
-            <img src="./public/test.jpg" class="result-img">
-
-            <div class="img-overlay">
-              <button class="img-donwload-btn">
-                <i class="ri-download-2-line"></i>
-              </button>
-            </div>
-          </div>
-
-
-
-
+          </div> -->
 
         </div>
       </form>
